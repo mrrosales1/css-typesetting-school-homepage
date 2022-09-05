@@ -1,0 +1,169 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+
+/* Fonts are from Fontsquirrel */
+@font-face {
+  font-family: 'im_fell_french_canon_proRg';
+  src: url('webfonts/fefcrm27c-webfont.woff2') format('woff2'),
+       url('webfonts/fefcrm27c-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dehutibold';
+  src: url('webfonts/dehuti-bold-webfont.woff2') format('woff2'),
+       url('webfonts/dehuti-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  font-family: im_fell_french_canon_proRg, serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: dehutibold, serif;
+  letter-spacing: 2.5px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+
+}
+
+p, li {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  word-spacing: 2.6px;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+a:link, a:visited {
+  color: #a66;
+}
+
+a:hover, a:focus {
+  background-color: #a66;
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: transparent;
+  color: #a66;
+  text-shadow: 1px 1px 3px black;
+}
+
+a[href^="http"] {
+  background: url(external-link-52.png) no-repeat 100%;
+  background-size: 15px;
+  padding-right: 17px;
+}
+
+ul, ol {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: upper-latin;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  margin-top: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a{
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.3rem;
+  border: 2px solid white;
+}
+
+nav li a:link, nav li a:visited, nav li a:focus {
+  background: #a66;
+  color: white;
+}
+
+nav li a:hover {
+  background: white;
+  color: #a66;
+}
+
+nav li a:active {
+  background: rgb(241, 240, 240);
+  color: #a66;
+  text-shadow: none;
+}
